@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color: #ddb79e;
+    background-color: #3f3f3f;
     color: white;
     padding: 10px;
     height: 40px;
@@ -13,12 +14,12 @@ header {
 }
 
 ul.menu_superior {
+    height: 40px;
     list-style: none;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    height: 30px;
 }
 ul.menu_superior li {
     display: flex;
@@ -26,11 +27,14 @@ ul.menu_superior li {
     align-items: center;
     width: 100%;
 
-    color: red;
-    background-color: aquamarine;
+    color: #ffffff;
+    background-color: #808080;
+
+    font-size: 1.25em;
+    font-weight: bold;
 }
 ul.menu_superior li:hover {
-    background-color: lightcoral;
+    background-color: #3f3f3f;
 }
 
 article ul {
@@ -38,7 +42,7 @@ article ul {
 }
 
 footer {
-    background-color: #ddb79e;
+    background-color: #808080;
     color: white;
     padding: 10px;
     text-align: right;
