@@ -7,6 +7,32 @@ header {
     color: white;
     padding: 10px;
 }
+
+ul.menu_superior {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 30px;
+}
+ul.menu_superior li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    color: red;
+    background-color: aquamarine;
+}
+ul.menu_superior li:hover {
+    background-color: lightcoral;
+}
+
+article ul {
+    padding: 50px;
+}
+
 footer {
     background-color: #ddb79e;
     color: white;
