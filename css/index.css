@@ -6,6 +6,10 @@ header {
     background-color: #ddb79e;
     color: white;
     padding: 10px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 ul.menu_superior {
