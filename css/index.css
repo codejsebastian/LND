@@ -1,49 +1,87 @@
+/* Reseteo de estilos. */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #f5f7fa;
 }
 
+/* Encabezado. */
 header {
-    background-color: #3f3f3f;
-    color: white;
+    background-color: #f5f7fa;
+    color: #cc0000;
     padding: 10px;
-    height: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+header img {
+    height: 50px;
 }
 
-ul.menu_superior {
+/* Menú. */
+nav > ul {
     height: 40px;
     list-style: none;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-ul.menu_superior li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    background-color: #cc0000;
 
-    color: #ffffff;
-    background-color: #808080;
+    position: absolute;
+
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+nav > ul > li {
+    /* width: 100%; */
+    padding: 0 10px;
+
+    color: #f5f7fa;
 
     font-size: 1.25em;
     font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
-ul.menu_superior li:hover {
+nav > ul > li:hover {
     background-color: #3f3f3f;
 }
 
+nav > ul > li > ul {
+    position: absolute;
+    transform: translateY(25px);
+    list-style: none;
+    z-index: 101;
+
+    border: solid 2px blue;
+    display:none;
+}
+nav > ul > li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f7fa;
+    width: 100%;
+}
+/* Contenido. */
 article ul {
     padding: 50px;
 }
 
+/* Pie. */
 footer {
-    background-color: #808080;
-    color: white;
+    background-color: #cc0000;
+    color: #f5f7fa;
     padding: 10px;
     text-align: right;
 }
